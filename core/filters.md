@@ -19,10 +19,10 @@ file and adding an attribute to your resource configuration.
 
 The search filter supports `exact`, `partial`, `start`, `end`, and `word_start` matching strategies:
 
-* `partial` strategy uses `LIKE %text%` to search for fields that containing the text.
-* `start` strategy uses `LIKE text%` to search for fields that starts with text.
-* `end` strategy uses `LIKE %text` to search for fields that ends with text.
-* `word_start` strategy uses `LIKE text% OR LIKE % text%` to search for fields that contains the word starting with `text`.
+* `partial` strategy uses `LIKE %text%` to search for fields that contain the text.
+* `start` strategy uses `LIKE text%` to search for fields that start with text.
+* `end` strategy uses `LIKE %text` to search for fields that end with text.
+* `word_start` strategy uses `LIKE text% OR LIKE % text%` to search for fields that contain the word starting with `text`.
 
 Prepend the letter `i` to the filter if you want it to be case insensitive. For example `ipartial` or `iexact`. Note that
 this will use the `LOWER` function and **will** impact performance [if there is no proper index](performance.md#search-filter).
