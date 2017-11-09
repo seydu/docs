@@ -496,7 +496,7 @@ automatically validated, persisted and serialized in JSON-LD. Then the Symfony k
 the client.
 
 Alternatively, you can also use standard Symfony controller and YAML or XML route declarations. The following example does
-exactly the same thing than the previous example in a more Symfony-like fashion:
+exactly the same thing as the previous example in a more Symfony-like fashion:
 
 ```php
 <?php
